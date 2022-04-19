@@ -22,6 +22,34 @@ function navHighlighter(){
     });
 }
 
+// Skills Scrolling
+function reveal() {
+    var reveal = document.querySelectorAll(".listColumns")
+
+    console.log('reveal:', reveal,'typeof::', typeof(reveal))
+   
+
+    for (var i = 0; i < reveal.length; i++) {
+        console.log(reveal[[i]])
+        let  windowHeight = window.innerHeight;
+        let  elementTop = reveal[i].getBoundingClientRect().top;
+
+        let  elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            // console.log('active')
+            reveal[i].classList.add("active");
+            console.log('here',reveal[i])
+          } else {
+            console.log(' remove active')
+            reveal[i].classList.remove("active");
+          }
+      }
+
+}
+
+window.addEventListener("scroll", reveal);
+// To check the scroll position on page load
+reveal();
 
 
 

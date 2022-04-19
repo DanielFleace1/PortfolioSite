@@ -66,7 +66,7 @@ html {
 
 .sections{
     height: 100vh;
-    min-height: 800px;
+    max-height: 800px;
 
     border-bottom: solid ;
     border-color: #8E8D8A;
@@ -74,7 +74,7 @@ html {
 
 #about{
     height: 100vh;
-    min-height: 800px;
+    max-height: 800px;
 }
 
 #aNameContainer{
@@ -312,16 +312,51 @@ img{
     padding-top: 60px;
   }
 
- 
-  
+  /* Skills CSS */
+  .listContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    color: #8E8D8A;
+    padding-top: 75px;
+    font-size: 20px;
+    justify-content: center;
+  }
 
+  #leftSkillColumn{
+    transform: translateX(-600px); 
+    opacity: 0; 
+    transition: 2.5s all ease;
+  }
+
+  #rightSkillColumn{
+    transform: translateX(600px); 
+    opacity: 0; 
+    transition: 2.5s all ease;
+  }
+
+  #rightSkillColumn.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  #leftSkillColumn.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  li{
+    list-style-type:circle  
+  }
+
+  .listColumns{
+    box-sizing: border-box;
+    padding-left: 50px;
+  }
 
   /* Media Queries */
   @media only screen and (max-width: 900px) {
     .navBar{
         display: none;
     }    
-    
-
   }
 
