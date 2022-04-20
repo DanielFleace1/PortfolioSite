@@ -313,12 +313,27 @@ img{
   }
 
   /* Skills CSS */
+  #skills{
+    max-height: 600px;
+  }
+  .skillsImgContainer{
+    display: flex;
+    justify-content: center;
+    transform: translateY(100px);  
+    opacity: 0; 
+    transition: 2s all ease;
+  }
+  .skillsImgContainer.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
   .listContainer{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     color: #8E8D8A;
-    padding-top: 75px;
+    padding-top: 25px;
     font-size: 20px;
     justify-content: center;
   }
@@ -339,18 +354,64 @@ img{
     transform: translateX(0);
     opacity: 1;
   }
+
   #leftSkillColumn.active{
     transform: translateX(0);
     opacity: 1;
   }
 
   li{
-    list-style-type:circle  
+    list-style-type:circle  ;
+    color:#8E8D8A;  
   }
 
   .listColumns{
     box-sizing: border-box;
     padding-left: 50px;
+  }
+
+  /* Work Experience */
+
+  .workExperienceAnimation{
+    transform: translateY(100px); 
+    opacity: 0; 
+    transition: 1s all ease;
+  }
+
+  .workExperienceAnimation.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .workExperienceHeading2{
+    padding-left: 60px;
+    color:#8E8D8A;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+
+  .workExperienceHeading3{
+    padding-left: 60px;
+    color:#e85a4f;
+    font-size: 18px;
+  }
+
+  .workExpList{
+    margin-left: 60px;
+  }
+
+  .workExpResume{
+    color:#8E8D8A;
+  }
+  
+  .workExpResume:hover{
+    color:#e85a4f
+  }
+  
+  .workExpClosing{
+    padding-left: 60px;
+    color:#8E8D8A;
+    font-size: 16px;
   }
 
   /* Media Queries */
