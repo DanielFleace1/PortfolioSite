@@ -24,7 +24,7 @@ function navHighlighter(){
 
 // Skills List Scrolling Animations
 function reveal() {
-    let reveal = document.querySelectorAll(".workExperienceAnimation, .skillsImgContainer, .listColumns")
+    let reveal = document.querySelectorAll(".workExperienceAnimation, .skillsImgContainer, .listColumns,.educationContent")
     for (let i = 0; i < reveal.length; i++) {
         let  windowHeight = window.innerHeight;
         let  elementTop = reveal[i].getBoundingClientRect().top;

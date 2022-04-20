@@ -414,6 +414,29 @@ img{
     font-size: 16px;
   }
 
+  /* Education CSS */
+
+  #education{
+    height: 400px;
+  }
+
+  .educationContent{
+    padding-left: 60px;
+    color:#8E8D8A;
+    font-size: 22px;
+
+    transform: translateX(300px); 
+    opacity: 0; 
+    transition: 2s all ease;
+  }
+
+  .educationContent.active{
+    transform: translateX(0px); 
+    opacity: 1; 
+  }
+
+
+
   /* Media Queries */
   @media only screen and (max-width: 900px) {
     .navBar{
