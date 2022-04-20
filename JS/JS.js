@@ -7,7 +7,7 @@ function navHighlighter(){
     // Loop sections to get height, top and ID values
     sections.forEach(sec => {
         const sectionHeight = sec.offsetHeight;
-        const sectionTop = sec.offsetTop - 50;
+        const sectionTop = sec.offsetTop - 200;
         const sectionId = sec.getAttribute("id");
     // Add active class & remove active class depending on Scroll Y
     if (
@@ -24,7 +24,7 @@ function navHighlighter(){
 
 // Skills List Scrolling Animations
 function reveal() {
-    let reveal = document.querySelectorAll(".workExperienceAnimation, .skillsImgContainer, .listColumns,.educationContent")
+    let reveal = document.querySelectorAll(".workExperienceAnimation, .skillsImgContainer, .listColumns,.educationContent, #projectCardHabits,#projectCardStockRace,#projectCardComingSoon ")
     for (let i = 0; i < reveal.length; i++) {
         let  windowHeight = window.innerHeight;
         let  elementTop = reveal[i].getBoundingClientRect().top;
