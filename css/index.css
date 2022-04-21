@@ -14,6 +14,7 @@ html {
   background-color: #eae7dc;
 }
 
+/* Nav Bar CSS */
 .navBar{
   position: sticky;
   top: 0px;   
@@ -61,8 +62,9 @@ html {
   color: #8E8D8A; 
 }
 
+/* Main CSS */
 #main{
-  width: 100vw;
+  overflow: hidden;
   max-width: 1300px;
   display: flex;
   flex-direction: column;
@@ -75,9 +77,10 @@ html {
   border-color: #8E8D8A;
 }
 
+/* About CSS */
 #about{
   height: 100vh;
-  max-height: 800px;
+  min-height: 700px;
 }
 
 #aNameContainer{
@@ -114,6 +117,7 @@ html {
   color: #8E8D8A;
   padding-left: 60px;
   margin-bottom: 0px;
+  font-size: 24px;
 }
 
 .aContactHover{
@@ -139,7 +143,7 @@ html {
   padding-left: 60px;
 }
 
-img{
+#aIcon  {
   margin-right: 25px;
   width: 90px;
   height: 90px;
@@ -147,32 +151,16 @@ img{
 
 #aLinkedINicon{
   padding-top: 4.5px;
+  margin-right: 25px;
   width: 88px;
   height: 88px;
 }
 
 #aResumeIcon{
   padding-top: 5.5px;
+  margin-right: 25px;
   width: 88px;
   height: 88px;
-}
-
-/* CSS Effects   */
-/* Bounce Out */
-.hvr-bounce-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-} 
-.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .sectionHeadings{
@@ -189,6 +177,9 @@ img{
 }
 
 /* Projects CSS */    
+#projects{
+  min-height: 850px;
+}
 .rowCardContainer{
   display: flex;
   flex-direction: row;
@@ -199,22 +190,13 @@ img{
   perspective: 1000px; 
 }
 
-#projectCardHabits{
-  width: 400px;
-  height: 200px;
-  transform: translateX(-300px);  
-  opacity: 0; 
-  transition: 2s all ease;
-}
-
-#projectCardHabits.active{
-  transform: translateX(0);
-  opacity: 1;
-}
-
 .projectCardInner{
   position: relative;
   width: 100%;
+  min-width: 400px; 
+  min-height: 200px;
+  max-width: 400px; 
+  max-height: 200px;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;  
@@ -226,6 +208,9 @@ img{
 }
 
 .projectCardFront{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color:  #e98074;
   color:   #eae7dc;
   padding-top: 10px;
@@ -256,7 +241,6 @@ img{
 #projectImgs{
   width: 300px;
   height: 160px;
-  padding-left: 50px ;
   padding-top: 3px;
 }
 
@@ -288,10 +272,19 @@ img{
 .cardLink:hover{
   text-decoration: underline;
 }
+
+#projectCardHabits{
+  transform: translateX(-300px);  
+  opacity: 0; 
+  transition: 2s all ease;
+}
+
+#projectCardHabits.active{
+  transform: translateX(0);
+  opacity: 1;
+}
   
 #projectCardStockRace{
-  width: 400px;
-  height: 200px;
   margin-left: 200px;
   margin-top: 80px; 
   transform: translateX(300px);  
@@ -305,8 +298,6 @@ img{
 }
 
 #projectCardComingSoon{
-  width: 325px;
-  height: 180px;
   margin-top: 80px; 
   margin-left: 250px;
   transform: translateY(100px);  
@@ -466,9 +457,102 @@ li{
 }
 
 /* Media Queries */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1250px) {
+  .rowCardContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+    /* margin-top: 10px; */
+  }
+
+  #projectCardComingSoon{
+    margin-top: 40px; 
+    margin-left:0px;
+  }  
+
+  
+  #projectCardStockRace{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  #projects {
+    min-height: 900px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
   .navBar{
     display: none;
   }    
 }
 
+
+
+@media only screen and (max-width: 650px) {
+  /* Fonts reduced by roughly .875  */
+
+  #aName{
+    font-size: 70px; 
+  }
+
+  #aInfo{
+    margin-top: 30px;
+    font-size: 16.5px;
+  }
+
+  #aContact{
+    font-size: 16.5px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #aName{
+    font-size: 50px; 
+  }
+  .projectCardInner{
+    position: relative;
+    width: 100%;
+    min-width: 350px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+  #aName{
+    font-size: 40px; 
+  }
+
+  #aInfo{
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  #aContact{
+    font-size: 14px;
+  }
+}
+
+
+/* CSS Effects   */
+/* Bounce Out */
+.hvr-bounce-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+} 
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
