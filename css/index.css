@@ -339,6 +339,12 @@ html {
   opacity: 1;
 }
 
+.skillsIcons{
+  margin-right: 25px;
+  width: 90px;
+  height: 90px;
+}
+
 .listContainer{
   box-sizing: border-box;
   display: flex;
@@ -381,11 +387,12 @@ li{
   padding-left: 50px;
 }
 
-  /* Work Experience */
+/* Work Experience */
 .workExperienceAnimation{
   transform: translateY(100px); 
   opacity: 0; 
   transition: 1s all ease;
+  margin-right: 40px;
 }
 
 .workExperienceAnimation.active{
@@ -427,12 +434,13 @@ li{
 /* Education CSS */
 #education{
   height: 800px;
+  margin-right: 20px;
 }
 
 .educationContent{
   padding-left: 60px;
   color:#8E8D8A;
-  font-size: 22px;
+  font-size: 20px;
   transform: translateX(300px); 
   opacity: 0; 
   transition: 2s all ease;
@@ -443,7 +451,6 @@ li{
   opacity: 1; 
 }
 
-/* Setting Heights for certain sections */
 #workExperience{
   height: 650px;
 }
@@ -463,14 +470,12 @@ li{
     flex-direction: column;
     margin-left: 0px;
     align-items: center;
-    /* margin-top: 10px; */
   }
 
   #projectCardComingSoon{
     margin-top: 40px; 
     margin-left:0px;
   }  
-
   
   #projectCardStockRace{
     margin-left: 0px;
@@ -480,20 +485,30 @@ li{
   #projects {
     min-height: 900px;
   }
+
 }
 
 
 @media only screen and (max-width: 1000px) {
+  
   .navBar{
     display: none;
-  }    
+  }   
+
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .skillsIcons{
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+  }
+
 }
 
 
-
 @media only screen and (max-width: 650px) {
-  /* Fonts reduced by roughly .875  */
-
   #aName{
     font-size: 70px; 
   }
@@ -507,23 +522,60 @@ li{
     font-size: 16.5px;
   }
 
+  .skillsIcons{
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+  }
+
+  #rightSkillColumn{
+    margin-right: 10px;
+  }
+
+  .workExperienceAnimation{
+    margin-right: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
   #aName{
     font-size: 50px; 
   }
+
   .projectCardInner{
     position: relative;
     width: 100%;
     min-width: 350px;
   }
 
+  .skillsIcons{
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+  }
 
+  .listColumns{
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+
+  .workExpList{
+    font-size: 14px;
+  }
+
+  .workExpClosing{
+    font-size: 14px;
+  }
+
+  #workExperience{
+    height: 715px;
+  }
 
 }
 
 @media only screen and (max-width: 400px) {
+
   #aName{
     font-size: 40px; 
   }
@@ -536,6 +588,38 @@ li{
   #aContact{
     font-size: 14px;
   }
+
+  .skillsIcons{
+    margin-right: 8px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #rightSkillColumn{
+    margin-right: 10px;
+  }
+  
+  .workExperienceHeading2{
+    padding-left: 60px;
+    color:#8E8D8A;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .workExperienceHeading3{
+    padding-left: 60px;
+    color:#e85a4f;
+    font-size: 16px;
+  }
+  
+  .workExpList{
+    font-size: 12px;
+  }
+
+  .workExpClosing{
+    font-size: 12px;
+  }
+
 }
 
 
