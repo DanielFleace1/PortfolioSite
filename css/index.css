@@ -26,15 +26,14 @@ html {
   align-items: center;
 }   
 
-.navPhoto{
-  border-radius: 50%;
-  border: solid 10px #8E8D8A;
+#navPhoto{
+  width: 120px;
+  height: 180px;
+  border-radius: 10%;
+  border: solid;
+  border-width: 2px;
+  border-color: #d8d6cc;
   margin-top: 125px;
-  width: 125px;
-  height: 125px;
-  text-align: center;
-  vertical-align: middle;
-  background-color:#e98074;
   margin-bottom: 30px;
 }
 
@@ -681,3 +680,4 @@ li{
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+
