@@ -11,15 +11,16 @@ html {
 .wrapper{
   display: flex;
   flex-direction: row;
-  background-color: #eae7dc;
+  background-color: #edf5e1;
+
 }
 
 /* Nav Bar CSS */
 .navBar{
   position: sticky;
   top: 0px;   
-  width: 325px;
-  background-color: #e98074;
+  width: 355px;
+  background-color: #379683;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,12 +28,12 @@ html {
 }   
 
 #navPhoto{
-  width: 120px;
-  height: 180px;
-  border-radius: 10%;
+  width: 150px;
+  height: 174px;
+  border-radius: 60%;
   border: solid;
-  border-width: 2px;
-  border-color: #d8d6cc;
+  border-width: 4px;
+  border-color: #edf5e1;
   margin-top: 125px;
   margin-bottom: 30px;
 }
@@ -40,7 +41,7 @@ html {
 .navElements{
   padding-top: 14px;
   text-decoration: none;
-  color:  #eae7dc;
+  color:  #edf5e1;
   font-size: 22px;
 }
 
@@ -49,16 +50,16 @@ html {
 }
 
 .navElements:hover{
-  color:#d8d6cc; 
+  color: #1f62a5;
 }
 
 .active{
-  color:#8E8D8A;
+  color: #05386b;
   font-weight: 600;
 } 
 
 .active:hover{
-  color: #8E8D8A; 
+  color: #05386b;
 }
 
 /* Main CSS */
@@ -73,7 +74,7 @@ html {
   height: 100vh;
   max-height: 800px;
   border-bottom: solid ;
-  border-color: #8E8D8A;
+  border-color: #91908f;
 }
 
 /* About CSS */
@@ -88,9 +89,9 @@ html {
 }
 
 #aName{
-  color: #e85a4f;
+  color:#5cdb95;
   overflow: hidden;
-  border-right: .08em solid #e85a4f;
+  border-right: .08em solid #5cdb95;;
   white-space: nowrap;
   font-size: 1.6rem;
   width: 0;
@@ -108,12 +109,12 @@ html {
 
 @keyframes blink {
   from { border-color: transparent }
-  to { border-color: #e85a4f; }  
+  to { border-color: #5cdb95; }  
 }
 
 #aContact {
   margin-top: -10px;
-  color: #8E8D8A;
+  color: #91908f;
   padding-left: 60px;
   margin-bottom: 0px;
   font-size: 24px;
@@ -124,7 +125,7 @@ html {
 }
 
 .aContactHover:hover{
-  color: #e85a4f;
+  color:#5cdb95;
 }
 
 #aInfo{
@@ -133,7 +134,7 @@ html {
   margin-right: 10px;
   max-width: 80%;
   font-size: 22px;
-  color: #E85A4F;
+  color: #05386b;
 }
 
 #icons{
@@ -164,7 +165,7 @@ html {
 }
 
 .sectionHeadings{
-  color: #e85a4f;
+  color: #5cdb95;
   margin-left: 60px;
   font-size: 34px; 
   margin-top: 40px;
@@ -172,7 +173,8 @@ html {
 }
 
 .sectionText{
-  color: #8E8D8A;
+  /* color: #91908f  ; */
+  color: #05386b;
   font-size: 20px;
   margin-left: 60px;
 }
@@ -212,8 +214,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #e98074;
-  color:   #eae7dc;
+  background-color:  #379683;
+  color: #edf5e1;
   padding-top: 10px;
   border-radius: 5%;
   position: absolute;
@@ -226,7 +228,7 @@ html {
 
 .projectCardBack{
   box-sizing: border-box;
-  background-color:  #e98074;
+  background-color:  #379683;
   border-radius: 5%;  
   transform: rotateY(180deg); 
   position: absolute;
@@ -244,32 +246,32 @@ html {
   height: 160px;
   border: solid   ;
   border-radius: 5%;
-  border-color: #eae7dc;;
+  border-color: #edf5e1;
   border-width: 3px;
 }
 
 .cardBackTitle{
   text-align: center;
-  color:   #eae7dc;
+  color: #edf5e1;
   font-size: 20px;
 }
 
 .cardBackContent{
   text-align: center;
-  color:   #eae7dc;
+  color: #edf5e1;
   font-size: 16px;
   padding-top: 20px;
 }
 
 .cardLinksContainer{
   box-sizing: border-box;
-  color: #eae7dc;
+  color: #edf5e1;
   text-decoration: none;
   margin-top: 30px;
 }
 
 .cardLink{
-  color: #eae7dc;
+  color: #edf5e1;
   text-decoration: none;
 }
 
@@ -316,7 +318,7 @@ html {
 
 #stockRaceBackContent{
   box-sizing: border-box;
-  color: #eae7dc;
+  color: #edf5e1;
   font-size: 14px;
   margin-top: 10px;
   padding-left: 3px;
@@ -353,7 +355,7 @@ html {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  color: #8E8D8A;
+  color: #05386B;
   padding-top: 25px;
   font-size: 20px;
   justify-content: center;
@@ -383,7 +385,7 @@ html {
 
 li{
   list-style-type:circle  ;
-  color:#8E8D8A;  
+color: #05386B; 
 }
 
 .listColumns{
@@ -406,14 +408,14 @@ li{
 
 .workExperienceHeading2{
   padding-left: 60px;
-  color:#8E8D8A;
+  color:#5aca8c;
   font-size: 22px;
   text-decoration: underline;
 }
 
 .workExperienceHeading3{
   padding-left: 60px;
-  color:#e85a4f;
+  color:#05386b;  
   font-size: 18px;
 }
 
@@ -422,16 +424,16 @@ li{
 }
 
 .workExpResume{
-  color:#8E8D8A;
+  color:#91908f;
 }
 
 .workExpResume:hover{
-  color:#e85a4f
+  color:#5cdb95;
 }
   
 .workExpClosing{
   padding-left: 60px;
-  color:#8E8D8A;
+  color:#91908f;
   font-size: 16px;
 }
 
@@ -443,7 +445,7 @@ li{
 
 .educationContent{
   padding-left: 60px;
-  color:#8E8D8A;
+  color:#05386b;
   font-size: 20px;
   transform: translateX(300px); 
   opacity: 0; 
@@ -641,14 +643,12 @@ li{
   
   .workExperienceHeading2{
     padding-left: 60px;
-    color:#8E8D8A;
     font-size: 20px;
     text-decoration: underline;
   }
   
   .workExperienceHeading3{
     padding-left: 60px;
-    color:#e85a4f;
     font-size: 16px;
   }
   
@@ -661,7 +661,6 @@ li{
   }
 
 }
-
 
 /* CSS Effects   */
 /* Bounce Out */
