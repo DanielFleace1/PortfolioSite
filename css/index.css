@@ -131,6 +131,7 @@ html {
 #aInfo{
   margin-top: 70px;
   margin-left: 60px;
+  margin-right: 10px;
   max-width: 80%;
   font-size: 22px;
   color: #E85A4F;
@@ -168,6 +169,7 @@ html {
   margin-left: 60px;
   font-size: 34px; 
   margin-top: 40px;
+  margin-right: 10px;
 }
 
 .sectionText{
@@ -241,7 +243,10 @@ html {
 #projectImgs{
   width: 300px;
   height: 160px;
-  padding-top: 3px;
+  border: solid   ;
+  border-radius: 5%;
+  border-color: #eae7dc;;
+  border-width: 3px;
 }
 
 .cardBackTitle{
@@ -489,7 +494,7 @@ li{
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   
   .navBar{
     display: none;
@@ -543,6 +548,19 @@ li{
     font-size: 50px; 
   }
 
+  #aIcon  {
+    margin-right: 15px;
+    
+  }
+  
+  #aLinkedINicon{
+    margin-right: 15px;
+  }
+  
+  #aResumeIcon{
+    margin-right: 15px;
+  }
+
   .projectCardInner{
     position: relative;
     width: 100%;
@@ -553,6 +571,15 @@ li{
     margin-right: 8px;
     width: 60px;
     height: 60px;
+  }
+
+  .cardBackContent{
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .cardLink{
+    font-size: 14px;
   }
 
   .listColumns{
@@ -569,10 +596,23 @@ li{
   }
 
   #workExperience{
-    height: 715px;
+    height: 750px;
+  }
+}
+
+/* Flip Cards */
+@media only screen and (max-width: 499px) {
+  
+  .projectCard .projectCardInner {
+    transform: rotateY(180deg);
+  }
+
+  #projectsHoverCaption{
+    display: none;
   }
 
 }
+
 
 @media only screen and (max-width: 400px) {
 
@@ -587,6 +627,7 @@ li{
 
   #aContact{
     font-size: 14px;
+    margin-right: 10px;
   }
 
   .skillsIcons{
