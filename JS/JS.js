@@ -22,6 +22,8 @@ function navHighlighter(){
     });
 }
 
+navHighlighter();   
+
 // Skills List Scrolling Animations
 function reveal() {
     let reveal = document.querySelectorAll(".workExperienceAnimation, .skillsImgContainer, .listColumns,.educationContent, #projectCardHabits,#projectCardStockRace,#projectCardComingSoon ")
