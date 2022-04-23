@@ -599,6 +599,10 @@ color: #05386B;
   #workExperience{
     height: 750px;
   }
+
+  #stockRaceBackContent{
+    font-size: 10px;
+  }
 }
 
 /* Flip Cards */
