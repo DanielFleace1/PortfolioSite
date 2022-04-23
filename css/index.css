@@ -553,6 +553,11 @@ color: #05386B;
     margin-right: 15px;
     
   }
+
+  #aContact{
+    font-size: 14px;
+    margin-right: 10px;
+  }
   
   #aLinkedINicon{
     margin-right: 15px;
@@ -628,11 +633,6 @@ color: #05386B;
   #aInfo{
     margin-top: 30px;
     font-size: 14px;
-  }
-
-  #aContact{
-    font-size: 14px;
-    margin-right: 10px;
   }
 
   .skillsIcons{
