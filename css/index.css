@@ -555,10 +555,10 @@ color: #05386B;
   }
 
   #aContact{
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 10px;
   }
-  
+
   #aLinkedINicon{
     margin-right: 15px;
   }
@@ -628,6 +628,10 @@ color: #05386B;
 
   #aName{
     font-size: 40px; 
+  }
+
+  #aContact{
+    font-size: 14px;
   }
 
   #aInfo{
